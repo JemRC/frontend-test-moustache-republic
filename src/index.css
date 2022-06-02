@@ -1,13 +1,119 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: Arial, sans-serif;
+  color: #888;
+  margin-left: 10vw;
+  margin-right: 10vw;
+  font-size: 13px;
+  line-height: 24px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+a {
+  text-decoration: none;
+  box-shadow: none;
+  color: inherit;
+}
+
+h1{
+  margin: 0.5rem 0;
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #222;
+}
+
+
+header {
+  display: flex;
+  justify-content: right;
+  background-color: #f6f6f7;
+  padding: 6px;
+  margin-top: 20px;
+}
+
+.myCart {
+  display: flex;
+  justify-content: right;
+  margin-right: auto;
+  margin-left: auto;
+  font-size: 12px;
+  min-width: 1000px;
+}
+
+.price {
+  border-top-style: solid;
+  border-bottom-style: solid;
+  border-width: thin;
+  border-color: rgba(34, 34, 34, 0.1);
+  font-weight: bold;
+  color: #222;
+}
+
+.product-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 50px;
+  max-width: 1000px;
+  gap: 6em;
+}
+
+.image-col {
+  max-width: 50%;
+}
+
+.description-col {
+  max-width: 50%;
+}
+
+.product-img {
+  max-width: 100%;
+}
+
+.size-wrapper {
+  display: flex;
+}
+
+button {
+  padding: 1rem;
+  margin: 0.2rem;
+  background-color: white;
+  border-style: solid;
+  border-color: #CCCCCC;
+  cursor: pointer;
+  border-width: thin;
+}
+
+.addtoCart{
+  margin-top: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  border-color: #222;
+  font-weight: bold;
+  border-width: medium;
+}
+
+.addtoCart:hover{
+  background-color: #222;
+  color: #CCC;
+}
+
+.cartRow {
+  display: flex;
+}
+
+span {
+  color: red;
+}
+
+.cart-span {
+  color: #888;
+}
+
+@media (max-width: 700px){
+  .product-wrapper {
+    flex-direction: column;
+  }
+  .image-col, .description-col {
+    max-width: 100%;
+  }
 }
